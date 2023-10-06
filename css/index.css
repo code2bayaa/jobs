@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css');
+@import url('https://use.fontawesome.com/releases/v6.1.1/css/all.css');
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size:100%;
+    color:#3F3F44;
+}
+file{
+    display : none;
+}
+button{
+    border:none;
+    background:linear-gradient(to right, #FF4B2B, #FF416C);
+    color:#fff;
+    font-family: 'Nunito', sans-serif;
+    height:40px;
+    min-width:10%;
+    cursor: pointer;
+    font-size:110%;
+    margin : 1%;
+}
+input{
+    text-align:center;
+    font-size:110%;
+    font-family: 'Nunito', sans-serif;
+    cursor:text;
+}
+select{
+    text-align:center;
+    font-size:110%;
+    font-family: 'Nunito', sans-serif;
+}
+option{
+    text-align:center;
+    font-size:110%;
+    font-family: 'Nunito', sans-serif;
+}
+a{
+    text-decoration:none;
+    color:#fff;
+    cursor:pointer;
+    text-align:center;
+}
+h2{
+    margin:1%;
+}
+h3{
+    margin:1%;
+}
+h4{
+    margin:1%;
+}
+textarea{
+    resize:none;
+    font-family:'Baloo 2', cursive;
+    color:#fff;
+    background:transparent;
+    width:100%;
+    height:auto;
+    border:none;
+}
+input[type=file]{
+    display:none;
+}
+#Jobs{
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.9),rgba(0,0,0,0.7)),url(http://localhost/jobs/image/employer.jpg);
+}
+#build{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap:wrap;
+    scroll-behavior:smooth;
+    position:fixed;
+    flex-direction:column;
+    overflow:hidden;
+}
+.slide a{
+    width:18%;
+    margin-left:1%;
+    color:#fff;
+}
+.slide{
+    height:15%;
+    bottom:0px;
+    width:98%;
+    position:fixed;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    z-index : 5;
+}
+.add-on{
+    height:30px;
+    border:1px solid #ccc;
+    margin:1px;
+    border-radius:10px;
+    width:40%;
+    display:none;
+    margin-left : 15%;
+}
+.add-on-register{
+    height:30px;
+    border:1px solid #ccc;
+    border-radius : 2px;
+    text-align : left;
+    width:30%;
+    margin:1px;
+    display:none;
+}
+#pauseWindow{
+    display:none;
+    z-index:27;
+    background:#fff;
+    width:100%;
+    height:100%;
+    position:fixed;
+    text-align:center;
+}
+#pauseWindowInfo{
+    width:70%;
+    height:auto;
+    background:#fff;
+    margin-left:15%;
+    margin-top:10%;
+}
+#nowGo{
+    height:40px;
+    background:rgba(34, 49, 63, 1);
+    width:60%;
+    margin-left:20%;
+    color:#fff;
+}
+.load-pause{
+    width:40%;
+}
+.holder{
+    height:100%;
+    width:100%;
+    overflow-y:auto;
+    overflow-x:hidden;
+}
+#title{
+    text-align:center;
+}
+#contain-lost div{
+    width:15%;
+    margin:1%;
+}
+#contain-lost{
+    display:flex;
+    width:90%;
+    margin-left:5%;
+    margin-top:1%;
+    background:#fff;
+}
+#log-in form{
+    position:relative;
+    height:auto;
+    width:100%;
+    border:1px solid rgba(234,234,234,1);
+    border-radius:20px;
+    text-align:center;
+}
+.section-heading{
+    background:rgba(255,255,255,1);
+    width:100%;
+    color:#000;
+    text-align:center;
+}
+#graph{
+    float:left;
+    width:50%;
+}
+#string-data img{
+    float:left;
+}
+#string-data div{
+    display:flex;
+    width:100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#string-data{
+    float:right;
+    width:50%;
+    height:auto;
+}
+.cryptos-about-area{
+    width:100%;
+    display:flex;
+    color:#fff;
+}
+.avatar-undraw{
+    height:35%;
+    width:40%;
+    margin:1%;
+}
+.avatar-undraw-c{
+    height:35%;
+    width:40%;
+    margin:1%;
+}
+#register{
+    width : 100%;
+    height : 99%;
+    margin-top:1%;
+}
+#personal-jobs{
+    float: right;
+    width: 58%;
+    margin-top: 10%;
+}
+#personal-doctor{
+    float: right;
+    width: 58%;
+    margin-top: 10%;
+}
+#register img{
+    height : 40%;
+    width : 40%;
+    float : left;
+    margin-top : 13%;
+}
+.welcome-header h1{
+    color:#fff;
+}
+.welcome-header{
+    width:100%;
+    height:100%;
+}
+.welcome-header-box{
+    width:100%;
+    height:100%;
+    position : relative;
+}
+.welcome-header-box-in{
+    width:100%;
+    height:100%;
+    transition: opacity 0.7s ease-in-out;
+    position : absolute;
+}
+.lbox-details{
+    width : 100%;
+    height : 100%;
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    text-align:center;
+}
+.push-left{
+    font-size : 170%;
+    float : left;
+    background : rgba(0,0,0,0.7);
+    margin-top : 20%;
+    color : #fff;
+    z-index : 4;
+    z-index : 4;
+    position : relative;
+}
+.push-right{
+    font-size : 170%;
+    float : right;
+    background : rgba(0,0,0,0.7);
+    margin-top : 20%;
+    color : #fff;
+    z-index : 4;
+    position : relative;
+}
+#content-box a{
+    border : 2px solid #fff;
+    min-height : 40px;
+    width : 250px;
+    background-image : linear-gradient(#f82c8b,#cf4a80,#fd97e2);
+    display : inline-block;
+}
+#content-box{
+    width : 40%;
+    height : 40%;
+    margin-left : 30%;
+    margin-bottom : 5%;
+    border : 1px solid #fff;
+    color : #fff;
+    position : relative;
+    top : 30%;
+}
+#about{
+    display : flex;
+}
+.about-wall{
+    width : 48%;
+    margin : 1%;
+}
+
+.about-m{
+	border: 2px solid #268181;
+	box-shadow: 0 10px 25px 0 rgba(0,0,40,.2);
+}
+.about-m ul#banner {
+  position: relative;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.about-m ul#banner li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.row{
+    display : flex;
+}
+.media-left icon-b{
+    border : 1px solid #ccc;
+    width : 30%;
+    margin : 1%;
+}
+.viewData{
+    width : 98%;
+    height : auto;
+    margin : 1%;
+}
+.about-m ul#banner li img {
+	visibility: hidden;
+	width: 100%;
+}
+
+.about-m ul#banner li canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.about-img{
+    width : 48%;
+    margin : 1%;
+}
+#title-box{
+    text-align : center;
+}
+#services{
+    width : 100%;
+    text-align : center;
+}
+.row{
+    display : flex;
+}
+.serviceBox{
+    width : 48%;
+    margin : 1%;
+}
+.main-header{
+    width:50%;
+    height:50%;
+    background:#fff;
+    float : right;
+    margin : 0.5%;
+    margin-top : 13%;
+}
+#feedback{
+    color : red
+}
+.withLeft{
+    position : relative;
+    left : 15%;
+}
+.quantity{
+    height:100px;
+    width:100px;
+    border-radius:10px;
+    background:#F7F8FB;
+}
+.container-fluid section{
+    display:flex;
+}
+.container-fluid{
+    width:100%;
+    background:#F7F8FB;
+    height:100%;
+}
+.single-feature{
+    width:23%;
+    min-height:100%;
+    margin:1%;
+    background:#fff;
+    border-radius:15px;
+    text-align:center;
+}
+#Home{
+    scroll-behavior:smooth;
+}
+.Navigation a{
+    color:rgba(0,0,0,0.9);
+    height : 100%;
+    width : 15%;
+    margin : 1%;
+    boder : none;
+    border-left : 1px solid #000;
+}
+.scrolled{
+    color : #000;
+}
+.Navigation{
+    width:100%;
+    display:flex;
+    position:sticky;
+    top:15%;
+    margin-top: -4%;
+    z-index: 4;
+}
+.inside{
+    color:#000;
+    border:2px solid #ccc;
+    width:300px;
+    height:40px;
+    border-radius : 10px;
+}
+.avatar-undraw{
+    height:62%;
+    float:left;
+}
+#Account{
+    background:#fff;
+    scroll-behavior:smooth;
+    overflow-y:hidden;
+}
+#log-in{
+    height:100%
+}
+.route-sign-register{
+    color:rgba(0,0,0,0.7);
+}
+#about{
+    width:100%;
+    text-align:center;
+    background:#fff;
+}
+#Lost{
+    background:#F7F8FB;
+}
+#Found{
+    background:#F7F8FB;
+}
+#contact{
+    width:100%;
+    background:#fff;
+    text-align:center;
+    height : 100%;
+}
+.bin{
+    color:#000;
+    margin:1%;
+}
+#info{
+    text-align:center;
+    background:#fff;
+}
+.pdf{
+    height:40x;
+    border-radius:10px;
+    border:1px solid rgba(234,234,234,1);
+    width:20%;
+    font-size:110%;
+}
+#cons{
+    font-size:150%;
+}
+#nav_column{
+    float : left;
+    width : 40%;
+    display : flex;
+    color : #fff;
+}
+#Logistics{
+    background:#fff;
+}
+#create-account input{
+    color : #fff;
+}
+#create-account{
+    width:100%;
+    height:100%;
+}
+#create-account form{
+    position:relative;
+    text-align:center;
+    height:auto;
+    width:100%;
+    border:1px solid rgba(234,234,234,1);
+    border-radius:20px;
+    height:65%;
+    margin:2%;
+}
+#input-div{
+    width:100%;
+    display:flex;
+    text-align : center;
+}
+#input-div-long-internal{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    text-align : center;
+}
+#input-div-internal{
+    display:flex;
+    flex-direction:column;
+    width:50%;
+}
+.i{
+    margin-left:2%;
+    font-size:110%;
+}
+.sendIfno{
+    width:100%;
+    border:none;
+    background:linear-gradient(to right, #FF4B2B, #FF416C);
+    color:#fff;
+    margin-top:1%;
+    font-size:120%;
+}
+.add-info{
+    background:transparent;
+    font-size:120%;
+    text-style:underline;
+}
+.input{
+    height:40px;
+    width:100%;
+    border:none;
+    border-bottom:1px solid rgba(234, 234, 234, 1);
+    background : transparent;
+}
+.inputAccount{
+  color: #000 !important;
+  background: transparent;
+  width: 80% !important;
+  height: 70px !important;
+  border: 1px solid #ccc !important;
+  border-radius: 4px;
+  margin-left: 10%;
+}
+#profile-view{
+    height : 40px;
+    width : 50%;
+    border : '1px solid #fff';
+    color : '#fff';
+    background : '#000'
+}
+.appearWall{
+    display : none;
+    width : 98%;
+    margin : 1%;
+    height : auto;
+}
+.input-reg{
+    height:40px;
+    width:32%;
+    margin-left:1%;
+    border:none;
+    border-bottom:1px solid rgba(234, 234, 234, 1);
+}
+#make-switch fas{
+    font-size : 140%;
+}
+#delete-jobs{
+    width : 20%;
+}
+#make-switch{
+    background : #fff;
+    border : 1px solid #ccc;
+    border-radius : 10px;
+    color : #000;
+    width : 48%;
+    margin : 1%;
+    height : 100%;
+}
+.jobs_doctor{
+    display : none;
+}
+.jobs_register{
+    display : none;
+}
+.office_icon {
+
+    background-image: url("https://hr.tum.ac.ke/public/cache/images/tree_icons.png");
+
+}
+
+@media(min-width:856px){
+
+    .slide{
+        top:0px;
+    }
+    #log-in form{
+        position:relative;
+        margin-top:10%;
+        right:20%;
+        height:auto;
+        width:40%;
+        border:1px solid rgba(234,234,234,1);
+        border-radius:20px;
+        float:right;
+        justify-content:center;
+        text-align:center;
+    }
+    .avatar-undraw-c{
+        height:35%;
+        width:30%;
+        float:right;
+    }
+    #create-account form{
+        position:relative;
+        width:50%;
+        border:none;
+        border-radius:5px;
+        font-family: 'Nunito', sans-serif;
+        float:left;
+        height : auto;
+        color: -internal-light-dark(white, white)!important;
+    }
+    #log-in{
+        margin-top: 5%;
+    }
+    #create-account{
+        margin-top: 5%;
+        color : #fff;
+    }
+}

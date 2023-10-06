@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+	background-image: url('background.jpg');
+	background-size: 100% 100%;
+	font-family: 'Montserrat', sans-serif;
+}
+h1 {
+	text-align: left;
+	font-weight: bold;
+}
+span {
+	font-size: 12px;
+}
+	
